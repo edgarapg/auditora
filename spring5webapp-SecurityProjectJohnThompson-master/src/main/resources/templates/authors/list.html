@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="refresh" content="5">   
+    <meta name="description"    >
+    <title>Spring Framework Guru</title>
+</head>
+<body>
+<h1>Author List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+        <td scope="row">1</td>
+        <td headers="myid1 myid2">Joe</td> 
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName}">Joe</td>
+        <td th:text="${author.lastName}">Smith</td>
+        
+    </tr>
+</table>
+
+</body>
+</html>
